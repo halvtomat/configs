@@ -15,7 +15,7 @@ set cc=80
 filetype plugin indent on
 syntax on
 set mouse=a
-set clipboard=unnamedplus
+set clipboard+=unnamedplus
 filetype plugin on
 set cursorline
 set ttyfast
@@ -32,8 +32,8 @@ call plug#begin("~/.vim/plugged")
     Plug 'ms-jpq/coq_nvim', {'branch': 'coq'}
     Plug 'ms-jpq/coq.artifacts', {'branch': 'artifacts'}
     Plug 'patstockwell/vim-monokai-tasty'
-    Plug 'pangloss/vim-javascript'
-    Plug 'maxMELLON/vim-jsx-pretty'
+    Plug 'yuezk/vim-js'
+    Plug 'maxmellon/vim-jsx-pretty'
     Plug 'sbdchd/neoformat'
 call plug#end()
 
@@ -50,4 +50,11 @@ vnoremap <A-j> :m '>+1<CR>gv=gv
 vnoremap <A-down> :m '>+1<CR>gv=gv
 vnoremap <A-k> :m '<-2<CR>gv=gv
 vnoremap <A-up> :m '<-2<CR>gv=gv
+
+
+"Auto format on save"
+augroup fmt
+    autocmd!
+    autocmd BufWritePre * undojoin | Neoformat
+augroup END
 
