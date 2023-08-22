@@ -1,0 +1,15 @@
+{
+  "omnisharp.useModernNet": false,
+  "workbench.colorTheme": "Nord",
+  "diffEditor.renderSideBySide": false,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "[javascript]": {
+    "editor.tabSize": 2
+  },
+  "editor.fontSize": 16,
+  "[python]": {
+    "editor.formatOnType": true
+  }
+}
+
