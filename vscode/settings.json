@@ -1,15 +1,31 @@
 {
-  "omnisharp.useModernNet": false,
-  "workbench.colorTheme": "Nord",
-  "diffEditor.renderSideBySide": false,
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.formatOnSave": true,
-  "[javascript]": {
-    "editor.tabSize": 2
-  },
-  "editor.fontSize": 16,
-  "[python]": {
-    "editor.formatOnType": true
-  }
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
+    "workbench.colorTheme": "Dracula",
+    "diffEditor.renderSideBySide": false,
+
+    "[javascript]": {
+        "editor.tabSize": 2
+    },
+    "[python]": {
+        "editor.formatOnType": true
+    },
+
+    "vim.leader": "<space>",
+    "vim.normalModeKeyBindings": [
+        {
+            "before": ["<leader>", "c", "<space>"],
+            "commands": ["editor.action.commentLine"],
+            "when": "editorTextFocus && !editorReadonly"
+        }
+    ],
+    "vim.visualModeKeyBindings": [
+        {
+            "before": ["<leader>", "c"],
+            "commands": ["editor.action.commentLine"],
+            "when": "editorTextFocus && !editorReadonly"
+        }
+    ]
 }
+
 
