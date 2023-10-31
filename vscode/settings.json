@@ -3,6 +3,8 @@
     "editor.formatOnSave": true,
     "workbench.colorTheme": "Dracula",
     "diffEditor.renderSideBySide": false,
+    "editor.fontFamily": "'Fira Code'",
+    "editor.fontLigatures": true,
 
     "[javascript]": {
         "editor.tabSize": 2
@@ -11,13 +13,19 @@
         "editor.formatOnType": true
     },
 
+    "vim.useSystemClipboard": true,
     "vim.leader": "<space>",
     "vim.normalModeKeyBindings": [
         {
             "before": ["<leader>", "c", "<space>"],
             "commands": ["editor.action.commentLine"],
             "when": "editorTextFocus && !editorReadonly"
+        },
+        {
+            "before": ["<leader>", "d"],
+            "commands": ["workbench.action.closeActiveEditor"]
         }
+
     ],
     "vim.visualModeKeyBindings": [
         {
@@ -27,5 +35,6 @@
         }
     ]
 }
+
 
 
