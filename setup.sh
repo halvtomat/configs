@@ -1,3 +1,9 @@
+echo 'Setting up font'
+echo '--- --- --- --- ---'
+echo 'Installing Fira Code'
+sudo apt install fonts-firacode
+echo '--- --- --- --- ---'
+
 echo 'Setting up VS Code'
 echo '--- --- --- --- ---'
 echo 'Installing VS Code'
