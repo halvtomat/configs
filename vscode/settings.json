@@ -24,6 +24,10 @@
         {
             "before": ["<leader>", "d"],
             "commands": ["workbench.action.closeActiveEditor"]
+        },
+        {
+            "before": ["<leader>", "tab"],
+            "commands": ["workbench.action.toggleSidebarVisibility"]
         }
 
     ],
