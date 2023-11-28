@@ -17,7 +17,7 @@
     "vim.leader": "<space>",
     "vim.normalModeKeyBindings": [
         {
-            "before": ["<leader>", "c", "<space>"],
+            "before": ["<leader>", "c"],
             "commands": ["editor.action.commentLine"],
             "when": "editorTextFocus && !editorReadonly"
         },
