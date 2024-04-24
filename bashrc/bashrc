@@ -1,4 +1,10 @@
+# CLI AND WINDOW LOOK
 PS1="\[\e[1;36m\]\w\[\e[m\]\[\e[1;32m\]>\[\e[m\] "
 PROMPT_COMMAND='echo -ne "\033]0;$(basename ${PWD})\007"'
+
+# ALIASES
+alias ssh='env TERM=xterm-256color ssh' # allows kitty to work with ssh
+
+# REMOVE BELL SOUND
 bind 'set bell-style none'
 
