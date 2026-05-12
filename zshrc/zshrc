@@ -1,0 +1,6 @@
+# PERSONAL CONFIG ----
+
+# CLI AND WINDOW LOOK
+PROMPT="%F{green}%~%f %F{magenta}>%f "
+alias ls='ls --color'
+
