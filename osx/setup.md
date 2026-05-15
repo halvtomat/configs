@@ -20,6 +20,7 @@ brew install rectangle
 ## LazyVim
 ```
 git clone https://github.com/LazyVim/starter ~/.config/nvim
+brew install rg
 ```
 
 ## iTerm config
