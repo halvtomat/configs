@@ -43,3 +43,8 @@ Apply the config
 ```sh
 git clone https://github.com/dracula/iterm.git
 ```
+
+## Keyboard fix
+
+Go to keyboard settings, `Change keyboard type` and identify as ISO
+to fix the < and > button not working
